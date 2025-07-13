@@ -1,0 +1,17 @@
+
+name: belajar_huruf
+description: A simple educational game for learning letters.
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^4.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/huruf/
+    - assets/images/
