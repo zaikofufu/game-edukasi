@@ -1,13 +1,17 @@
-workflows:
-  flutter-apk:
-    name: Build APK Android
-    max_build_duration: 30
-    environment:
-      flutter: stable
-    scripts:
-      - name: Get dependencies
-        script: flutter pub get
-      - name: Build APK
-        script: flutter build apk --release
-    artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+name: belajar_huruf
+description: A simple educational app to learn alphabets.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^4.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/huruf/
