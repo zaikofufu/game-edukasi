@@ -1,0 +1,17 @@
+name: belajar_huruf
+description: A simple educational app to learn alphabets.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^4.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/huruf/
